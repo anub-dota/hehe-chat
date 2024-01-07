@@ -33,6 +33,7 @@ app.post('/register', async (req, res) => {
     const {user, pwd} = req.body;
     //check from database if user exists
     const password = await bcrypt.hash(pwd, 10)
+    console.log(user)
 
     try{
         const response = await User.create({
@@ -42,10 +43,13 @@ app.post('/register', async (req, res) => {
         console.log(response)
 
     }catch (error){
+        console.log(error)
         if(error.code ===11000){
             res.status(409).send()
         }
-        throw error
+        else{
+            throw error
+        }
     }
 
     res.send()
