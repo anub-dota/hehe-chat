@@ -14,7 +14,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: dodgerblue;
+  background-color: rgb(23, 56, 90);
 }
 
 .App {
@@ -25,14 +25,18 @@ body {
   min-height: 100vh;
   padding: 1rem 0.5rem;
 }
-
+.hehe {
+  color: bisque;
+}
 section {
+  position: relative;
+  align-self: center;
   width: 100%;
   max-width: 420px;
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.4);
 }
