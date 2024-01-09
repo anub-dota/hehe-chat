@@ -1,7 +1,6 @@
 A real time chat app.
-//
+
 This is going to be a clone app developed mainly in order to hone our Full Stack Web Development Skills
-//
 
 ## Contributors
 Contributors of this Group project:
